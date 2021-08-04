@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+
+body {
+    background: rgba(235, 159, 88, 0.7);
+}
+
+.container {
+    margin: 2em 0;
+    height: 460px;
+    width: 220px;
+    border-radius: 6px;
+    background: rgba(105, 75, 74, 0.6);
+    box-shadow: -13px 13px 14px rgb(0, 0, 0, 0.3);
+}
+
+.countdown-section {
+    margin: 0.5em 0.5em 0 0.5em;
+    height: 200px;
+    background-color: #fff;
+    border: 6px solid rgb(184, 164, 164);
+}
+
+.countdown-section h2 {
+    position: relative;
+    top: 75px;
+    color: blue;
+}
+
+.hide {
+    display: none;
+}
+
+.session-countdown {
+    color: rgb(6, 188, 248); 
+}
+
+.break-countdown {
+    color: rgb(6, 188, 248); 
+}
+
+.current-countdown-name {
+    text-align: center;
+    height: 80px;
+    border-bottom: 1px dotted #000;
+    border-bottom-color: #ccc;
+}
+
+.current-countdown-name #current-name{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.current-countdown-name #current-name {
+    position: relative;
+    top: 20px;
+}
+
+.set-session-break-time-section {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px dotted #000;
+    border-bottom-color: #ccc;
+    color: #fff;
+}
+
+.set-session-break-time-section .set-session-time p {
+    color: rgb(102, 207, 241);
+}
+
+.set-session-break-time-section .set-break-time p {
+    color: rgb(255, 102, 0);
+}
+
+.set-session-break-time-section h5,
+.set-session-break-time-section p {
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.set-session-break-time-section .small-btn,
+.manipulate-time .btn {
+    color: #fff;
+    font-weight: 400;
+    background-color: #000;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 50ms transform ease-in-out;
+}
+
+.set-session-break-time-section .small-btn:hover,
+.manipulate-time .btn:hover {
+    background-color: #000;
+    opacity: 0.9;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.set-session-break-time-section .small-btn:active,
+.manipulate-time .btn:active {
+    outline: none;
+    transform: scale(0.9);
+}
+
+.manipulate-time {
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.set-session-break-time-section .small-btn {
+    height: 24px;
+    width: 40px;
+    font-size: 1rem;
+}
+
+.manipulate-time .btn {
+    margin: 0 0 0.5em 0;
+    height: 25px;
+    width: 80px;
+    font-size: 0.8rem;
+}

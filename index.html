@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap">
+    <link rel="icon" href="./images/web-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+    <center>
+        <section class="container">
+            <div class="countdown-section">
+                <h2 id="session-countdown" class="session-countdown">
+                    <!-- SESSION COUNTDOWN -->
+                    <span id="sm">00</span>
+                    :
+                    <span id="ss">00</span>
+                </h2>
+                <h2 id="break-countdown" class="hide break-countdown">
+                    <!-- BREAK COUNTDOWN -->
+                    <span id="bm">00</span>
+                    :
+                    <span id="bs">00</span>
+                </h2>
+            </div>
+            <div class="session-break-section">
+                <div id="current-countdown-name" class="current-countdown-name">
+                    <p id="current-name">Session</p>
+                </div>
+                <div class="set-session-break-time-section">
+                    <div class="set-session-time">
+                        <h5>Session Time</h5>
+                        <p id="session-time">00</p>
+                        <button class="small-btn" data-session-minus>-</button>
+                        <button class="small-btn" data-session-plus>+</button>
+                    </div>
+                    <div class="set-break-time">
+                        <h5>Break Time</h5>
+                        <p id="break-time">00</p>
+                        <button class="small-btn" data-break-minus>-</button>
+                        <button class="small-btn" data-break-plus>+</button>
+                    </div>
+                </div>
+                <div class="manipulate-time">
+                    <button class="btn" data-start-btn>Start</button>
+                    <button class="btn" data-play-pause-btn>Play/Pause</button>
+                    <button class="btn" data-stop-btn>Stop</button>
+                    <button class="btn" data-reset-btn>Reset</button>
+                </div>
+            </div>
+        </section>
+    </center>
+    <script src="./js/script.js"></script>
+</body>
+</html>
